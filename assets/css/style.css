@@ -1,5 +1,4 @@
 
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -345,9 +344,9 @@ ul #acc:hover{
   position: absolute;
   left: 50%;
   top: 0;
-  width: 130%;
-  height: 95%;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/bulb3.jpg") center top no-repeat;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/bulb2.jpg") center top no-repeat;
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
@@ -360,7 +359,6 @@ ul #acc:hover{
   top: 0;
   width: 130%;
   height: 96%;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
   background: #2b9335;
   z-index: 0;
   border-radius: 0 0 50% 50%;
@@ -488,14 +486,12 @@ ul #acc:hover{
   text-align: center;
 }
 
-#caro-no-slider::before {
-  content: '';
+#caro-no-slider {
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/bulb3.jpg") center top no-repeat;
 }
 
 #caro-no-slider h2 {
@@ -525,13 +521,6 @@ ul #acc:hover{
   animation-delay: 0.8s;
   border: 2px solid #2b9335;
 }
-
-#caro-no-slider .btn-get-started:hover {
-  background: #68A4C4;
-  color: #fff;
-  text-decoration: none;
-}
-
 @media (max-width: 575px) {
   #caro-no-slider h2 {
     font-size: 30px;
@@ -593,9 +582,9 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background-color: #021604;
+  background-color: #ffffff;
   min-height: 40px;
-  color: #fff;
+  color: #2b9335;
 }
 
 .breadcrumbs h2 {
@@ -613,12 +602,13 @@ section {
 
 .breadcrumbs ol li + li {
   padding-left: 10px;
+  color: #000;
 }
 
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #fff;
+  color: #000;
   content: "/";
 }
 
@@ -977,6 +967,9 @@ color: #2b9335;
 .about p:last-child {
   margin-bottom: 0;
 }
+.about .about-us{
+  line-height: 2;
+}
 
 /*--------------------------------------------------------------
 # Facts
@@ -1025,7 +1018,9 @@ color: #2b9335;
   text-align: left;
   transition: .9s;
 }
-
+.skills .our-skills{
+  line-height: 2;
+}
 /*--------------------------------------------------------------
 # Tetstimonials
 --------------------------------------------------------------*/
@@ -1034,6 +1029,9 @@ color: #2b9335;
 }
 .section-title h2{
   color: #2b9335;
+}
+.testimonials .testimony{
+  line-height: 1.5;
 }
 .testimonials .section-header {
   margin-bottom: 40px;
@@ -1106,7 +1104,7 @@ color: #2b9335;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #68A4C4;
+  background-color: #2b9335;
 }
 
 /*--------------------------------------------------------------
@@ -1328,7 +1326,7 @@ color: #2b9335;
   cursor: pointer;
   margin: 0 12px 5px 12px;
   display: inline-block;
-  padding: 0 4px 6px 4px;
+  padding: 5 4px 6px 4px;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -1344,7 +1342,6 @@ color: #2b9335;
 }
 
 .portfolio .portfolio-item {
-  background: #2b9335;
   overflow: hidden;
   min-height: 200px;
   position: relative;
@@ -1354,6 +1351,7 @@ color: #2b9335;
 
 .portfolio .portfolio-item img {
   transition: all 0.3s ease-in-out;
+  padding: 10px;
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -1373,13 +1371,13 @@ color: #2b9335;
 }
 
 .portfolio .portfolio-item .portfolio-info a i {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 28px;
   transition: 0.3s;
 }
 
 .portfolio .portfolio-item .portfolio-info a i:hover {
-  color: white;
+  color: #2b9339;
 }
 
 .portfolio .portfolio-item:hover img {
@@ -1460,22 +1458,26 @@ color: #2b9335;
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
+.Our-team {
   background: #fff;
   padding-bottom: 30px;
 }
 
-.team .member {
+.Our-team .team-member {
   margin-bottom: 20px;
   overflow: hidden;
+  box-shadow: 0px 0px 30px rgba(43, 147, 53, 0.4);
+  border: 2px solid #2b9339;
+  border-radius: 3%;
 }
 
-.team .member .member-img {
+.Our-team .team-member .team-member-img {
   position: relative;
   overflow: hidden;
+ height: 40vh;
 }
 
-.team .member .social {
+.Our-team .team-member .social-media {
   position: absolute;
   left: 0;
   bottom: -40px;
@@ -1491,53 +1493,65 @@ color: #2b9335;
   justify-content: center;
 }
 
-.team .member .social a {
+.Our-team .team-member .social-media a {
   transition: color 0.3s;
   color: #fff;
+  width: 30px;
+  font-size: 25px;
   margin: 0 12px;
   display: inline-block;
 }
 
-.team .member .social a:hover {
-  color: #68A4C4;
+.Our-team .team-member .social-media a:hover {
+  color: #000;
 }
 
-.team .member .social i {
-  font-size: 18px;
+.Our-team .team-member .social-media i {
+  font-size: 22px;
   margin: 0 2px;
 }
 
-.team .member .member-info h4 {
+.Our-team .team-member .team-member-info h4 {
   font-weight: 700;
   margin: 15px 0 5px 0;
   font-size: 18px;
+  text-align: center;
 }
 
-.team .member .member-info span {
+.Our-team .team-member .team-member-info span {
   display: block;
   font-size: 13px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 15px;
-  color: #68A4C4;
+  color: #2b9335;
+  text-align: center;
 }
 
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #666;
+.Our-team .team-member .team-member-info p{
+  font-size: 18px;
+  line-height: 23px;
+  font-family: sans-serif;
+}
+.team-member-info p{
+  margin-left: 10px;
 }
 
-.team .member:hover .social {
+.Our-team .team-member:hover .social-media {
   bottom: 0;
   opacity: 1;
   transition: bottom ease-in-out 0.4s;
 }
 
-.team .member:hover .social a, .team .member:hover .social i {
+.Our-team .team-member:hover .social-media a, .Our-team .team-member:hover .social-media i {
   line-height: 0;
   font-size: 18px;
+}
+
+@media (max-width: 1024) {
+  .img-fluid{
+    max-height: 30vh;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1548,24 +1562,22 @@ color: #2b9335;
 }
 
 .contact .info-box {
-  color: #444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(47, 147, 53, 0.4);
   padding: 20px 0 30px 0;
   margin-bottom: 30px;
 }
 
 .contact .info-box i {
   font-size: 32px;
-  color: #68A4C4;
+  color: #2b9335;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #a2cce3;
+  border: 2px dotted #2b9935;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #666;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1578,7 +1590,7 @@ color: #2b9335;
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px rgba(43, 147, 53, 0.4);
   padding: 30px;
   margin-bottom: 30px;
 }
@@ -1586,7 +1598,7 @@ color: #2b9335;
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #ff0000;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1599,7 +1611,7 @@ color: #2b9335;
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #2b9935;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1630,9 +1642,21 @@ color: #2b9335;
   box-shadow: none;
   font-size: 14px;
 }
+.contact .php-email-form input{
+  border: 1px solid grey;
+}
+.contact .php-email-form input:hover{
+  border: 1px solid #2b9935;
+}
+.contact .php-email-form textarea{
+  border: 1px solid grey;
+}
+.contact .php-email-form textarea:hover{
+  border: 1px solid #2b9935;
+}
 
 .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
-  background-color: #68A4C4;
+  background-color: #2b9339;
 }
 
 .contact .php-email-form input {
@@ -1644,15 +1668,17 @@ color: #2b9335;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #68A4C4;
+  background: #2b9935;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
+  border-radius: 3%;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #8dbad2;
+  background: #000;
+  color: #fff;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1671,19 +1697,6 @@ color: #2b9335;
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*--------------------------------------------------------------
-# Map
---------------------------------------------------------------*/
-.map {
-  padding: 0;
-  margin-bottom: -6px;
-}
-
-.map iframe {
-  width: 100%;
-  height: 380px;
 }
 
 /*--------------------------------------------------------------
@@ -1888,11 +1901,11 @@ color: #2b9335;
   color: #1e4356;
 }
 
-.blog .blog-author .social-links {
+.blog .blog-author .social-media-links {
   margin: 0 10px 10px 0;
 }
 
-.blog .blog-author .social-links a {
+.blog .blog-author .social-media-links a {
   color: rgba(30, 67, 86, 0.5);
   margin-right: 5px;
 }
@@ -2251,8 +2264,8 @@ color: #2b9335;
 
 #footer .footer-top {
   background: #021604;
-  border-top: 1px solid #17455e;
-  border-bottom: 1px solid #123649;
+  border-top: 1px solid #2b9335;
+  border-bottom: 1px solid #2b9335;
   padding: 60px 0 30px 0;
 }
 
@@ -2278,7 +2291,7 @@ color: #2b9335;
 }
 
 #footer .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 25px;
   display: inline-block;
   background: #2b9335;
   color: #fff;
@@ -2287,9 +2300,9 @@ color: #2b9335;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
 }
 
 #footer .footer-top .social-links a:hover {
@@ -2341,7 +2354,7 @@ color: #2b9335;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #a2cce3;
+  color: #2b9335;
 }
 
 #footer .footer-top .footer-contact {
@@ -2365,5 +2378,6 @@ color: #2b9335;
 }
 
 #footer .credits a {
-  color: rgb(255, 0, 0);
+  color: rgb(43, 147, 53);
 }
+
