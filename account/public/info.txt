@@ -1,0 +1,7 @@
+fa icons
+  fa fa-envelope
+  fa fa-check-square
+  fa fa-eye
+  fa fa-eye-slash
+  fa fa-exclamation-circle
+  fa fa-lock
