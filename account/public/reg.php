@@ -57,9 +57,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav position-absolute top-50 start-50 translate-middle">
-                    <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-                    <a class="nav-link  active" href="#">Register</a>
-                    <a class="nav-link text-white" href="#">Login</a>
+                    <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link  active" href="reg.php">Register</a>
+                    <a class="nav-link text-white" href="login.php">Login</a>
                 </div>
             </div>
         </div>
