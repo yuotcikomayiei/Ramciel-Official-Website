@@ -1,0 +1,46 @@
+ 
+ .border-green {
+        border: 2px solid green;
+    }
+
+    input {
+        max-height: 35px;
+    }
+
+    label {
+        margin-top: -12px;
+    }
+
+    .green-text {
+        color: green;
+    }
+
+    input:focus,
+    input:hover,
+    label:focus,
+    label:hover {
+        border-color: #146c43;
+        box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+    }
+
+    input:focus-visible {
+        font-size: small;
+        margin-top: -8px;
+        border-color: #146c43;
+        box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+        opacity: .8;
+    }
+
+    .welcome {
+        padding-top: 7.5em;
+    }
+
+    @media screen and (max-width: 600px) {
+        .welcome {
+            padding-top: .5em;
+        }
+    }
+
+    .form-container{
+        margin-top: 5em;
+    }
