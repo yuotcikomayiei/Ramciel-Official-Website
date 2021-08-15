@@ -332,7 +332,7 @@ ul #acc:hover{
 --------------------------------------------------------------*/
 #caro {
   width: 100%;
-  height: 95vh;
+  height: 96vh;
   overflow: hidden;
   position: relative;
   padding: auto;
@@ -344,9 +344,9 @@ ul #acc:hover{
   position: absolute;
   left: 50%;
   top: 0;
-  width: 120%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/bulb2.jpg") center top no-repeat;
+  width: 130%;
+  height: 96%;
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/slide/caro-pic.jpg") center top no-repeat;
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
@@ -358,11 +358,11 @@ ul #acc:hover{
   left: 50%;
   top: 0;
   width: 130%;
-  height: 96%;
+  height: 97%;
   background: #2b9335;
   z-index: 0;
   border-radius: 0 0 50% 50%;
-  transform: translateX(-50%) translateY(18px) rotate(2deg);
+  transform: translateX(-50%) translateY(18px);
 }
 
 #caro .carousel-container {
@@ -380,8 +380,8 @@ ul #acc:hover{
 #caro h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 800;
 }
 
 #caro p {
@@ -390,6 +390,7 @@ ul #acc:hover{
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
+  font-size: 25px;
 }
 
 #caro .carousel-control-prev, #caro .carousel-control-next {
@@ -405,9 +406,9 @@ ul #acc:hover{
 }
 
 #caro .btn-get-started {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -557,7 +558,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: #ddd;
+  background: #021404;
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -568,9 +569,12 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #68A4C4;
+  background: #2b9339;
   bottom: 0;
   left: calc(50% - 20px);
+}
+.section-title .fact::after{
+  background: #fff;
 }
 
 .section-title p {
@@ -627,18 +631,17 @@ section {
 /*--------------------------------------------------------------
 # Our Services
 --------------------------------------------------------------*/
-.services {
+.services-title {
   padding-bottom: 20px;
 }
-.services h2{
+.services-title h2{
 text-align: center;
-text-decoration: underline;
 margin-bottom: 40px;
 color: #2b9335;
 }
 
 
-.services .icon-box {
+.services-title .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -650,7 +653,7 @@ color: #2b9335;
   border: 1px solid #fff;
 }
 
-.services .icon {
+.services-title .icon {
   margin: 0 auto 20px auto;
   padding-top: 17px;
   display: inline-block;
@@ -660,24 +663,26 @@ color: #2b9335;
   height: 72px;
 }
 
-.services .icon i {
+.services-title .icon i {
   font-size: 36px;
   line-height: 1;
 }
 
-.services .title {
+.services-title .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.services-title .title a {
   color: #2b9335;
 }
 
-.services .description {
-  font-size: 15px;
+.services-title .description {
+  font-size: 18px;
   line-height: 28px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
   margin-bottom: 0;
 }
 
@@ -685,11 +690,11 @@ color: #2b9335;
   background: rgb(206, 140, 151);
 } */
 
-.services .icon-box-pink .icon i {
+.services-title .icon-box-pink .icon i {
   color: #2b9335;
 }
 
-.services .icon-box-pink:hover {
+.services-title .icon-box-pink:hover {
   border-color: #2b9335;
   border-radius: 10px;
 }
@@ -698,11 +703,11 @@ color: #2b9335;
   background: #e6fdfc;
 } */
 
-.services .icon-box-cyan .icon i {
+.services-title .icon-box-cyan .icon i {
   color: #2b9335;
 }
 
-.services .icon-box-cyan:hover {
+.services-title .icon-box-cyan:hover {
   border-color: #2b9335;
   border-radius: 10px;
 }
@@ -711,11 +716,11 @@ color: #2b9335;
   background: #eafde7;
 } */
 
-.services .icon-box-green .icon i {
+.services-title .icon-box-green .icon i {
   color: #2b9335;
 }
 
-.services .icon-box-green:hover {
+.services-title .icon-box-green:hover {
   border-color: #2b9335;
   border-radius: 10px;
 }
@@ -724,11 +729,11 @@ color: #2b9335;
   background: #e1eeff;
 } */
 
-.services .icon-box-blue .icon i {
+.services-title .icon-box-blue .icon i {
   color: #2b9335;
 }
 
-.services .icon-box-blue:hover {
+.services-title .icon-box-blue:hover {
   border-color: #2b9335;
   border-radius: 10px;
 }
@@ -741,9 +746,8 @@ color: #2b9335;
   box-shadow: 0 5px 25px 0 rgba(43, 147, 53, 0.6);
   background: #fff;
 }
-.ramciel h3{
+.ramciel h2{
   text-align: center;
-  text-decoration: underline;
   color: #2b9335;
   padding: 15px;
 }
@@ -797,7 +801,7 @@ color: #2b9335;
 .ramciel .icon-box .description {
   margin-left: 95px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .ramciel .video-box {
@@ -812,7 +816,7 @@ color: #2b9335;
 .ramciel .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#2b9335 50%, rgba(104, 164, 196, 0.4) 52%);
+  background: radial-gradient(#2b9335 50%, rgba(2, 90, 16, 0.465) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -860,7 +864,7 @@ color: #2b9335;
 }
 
 .ramciel .play-btn:hover::after {
-  border-left: 15px solid #68A4C4;
+  border-left: 15px solid #2b9335;
   transform: scale(20);
 }
 
@@ -968,24 +972,34 @@ color: #2b9335;
   margin-bottom: 0;
 }
 .about .about-us{
-  line-height: 2;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
+.facts{
+  background: linear-gradient(to right, rgba(43, 147, 53, 0.99), rgba(2, 20, 8, 0.99));
+}
 .facts .counters span {
-  font-size: 48px;
+  font-size: 55px;
+  font-weight: bold;
   display: block;
-  color: #2b9335;
+  color: #fff;
+}
+.facts .fact{
+  color: #fff;
 }
 
 .facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #2b9335;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1018,8 +1032,10 @@ color: #2b9335;
   text-align: left;
   transition: .9s;
 }
-.skills .our-skills{
-  line-height: 2;
+.our-skills{
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 /*--------------------------------------------------------------
 # Tetstimonials
@@ -1032,6 +1048,8 @@ color: #2b9335;
 }
 .testimonials .testimony{
   line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 .testimonials .section-header {
   margin-bottom: 40px;
@@ -1040,6 +1058,8 @@ color: #2b9335;
 
 .testimonials .testimonial-item {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1063,6 +1083,9 @@ color: #2b9335;
 }
 .testimonials .testimonial-item p{
   color: #000;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
 }
 .section-title p{
   color: #000;
@@ -1100,7 +1123,7 @@ color: #2b9335;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #68A4C4;
+  border: 1px solid #000;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
@@ -1196,6 +1219,7 @@ color: #2b9335;
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
   background: #fff;
   text-align: center;
+  height: auto;
 }
 .pricing h2{
   color: #2b9335;
@@ -1243,7 +1267,11 @@ color: #2b9335;
   font-size: 18px;
   padding-right: 4px;
 }
-
+.pricing .tick::before{
+  content: "=> ";
+  font-size: 25px;
+  color: #2b9339;
+}
 .pricing ul .na {
   color: #000;
 }
@@ -1482,7 +1510,7 @@ color: #2b9335;
   left: 0;
   bottom: -40px;
   right: 0;
-  height: 30px;
+  height: 40px;
   opacity: 0;
   transition: bottom ease-in-out 0.4s;
   text-align: center;
@@ -1552,6 +1580,98 @@ color: #2b9335;
   .img-fluid{
     max-height: 30vh;
   }
+}
+@media (max-width: 700){
+  .social-media{
+    display: inline-flex;
+    visibility: visible;
+  }
+}
+/*=====================================================================
+ What team says  
+=======================================================================*/
+.Team {
+  padding: 60px 0;
+  box-shadow: 0px 0px 30px rgba(43, 147, 53, 0.4);
+}
+.section-title h2{
+  color: #2b9335;
+}
+.Team .testimony{
+  line-height: 1.5;
+}
+.Team .section-header {
+  margin-bottom: 40px;
+  color: #2b9335;
+}
+
+.Team .team-item {
+  text-align: center;
+}
+
+.Team .team-item .team-img {
+  width: 120px;
+  border-radius: 45%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+
+.Team .team-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #2b9335;
+}
+
+.Team .team-item h4 {
+  font-size: 14px;
+  color: #2b9335;
+  margin: 0 0 15px 0;
+}
+.Team .team-item p{
+  color: #000;
+}
+.section-title p{
+  color: #000;
+}
+.Team .team-item .quote-icon-left, .Team .team-item .quote-icon-right {
+  color: #fbfcfd;
+  font-size: 26px;
+}
+
+.Team .team-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.Team .team-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.Team .team-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+.Team .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.Team .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #000;
+}
+
+.Team .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #2b9335;
 }
 
 /*--------------------------------------------------------------
@@ -2216,7 +2336,7 @@ color: #2b9335;
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #021604;
+  background: #021404;
 }
 
 #footer .footer-newsletter h4 {
@@ -2297,7 +2417,7 @@ color: #2b9335;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin: auto;
   border-radius: 50%;
   text-align: center;
   width: 40px;
@@ -2380,4 +2500,8 @@ color: #2b9335;
 #footer .credits a {
   color: rgb(43, 147, 53);
 }
-
+@media (max-width: 700px) {
+  #footer .footer-top .social-links a{
+    align-items: center;
+  }
+}
